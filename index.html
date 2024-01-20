@@ -7,10 +7,16 @@
     <title>Desmond Mwirigi</title>
 
     <style>
-   *{
+ *{
     margin:0;
     padding: 0;
 }
+body {
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
 nav{
     height: 30px;
     width: 100%;
@@ -73,18 +79,18 @@ nav{
     padding-left: 20px;
 }
 #butt{
-    width: 23%;
-    height: 50px;
+    width: 30%;
+    height: 35px;
     margin: 0.5%;
-    padding: 5px;
+    /* padding: 5px; */
     background: #f5e8d1;
     border: none;
 }
 #but{
-    width: 23%;
-    height: 30px;
+    width: 30%;
+    height: 35px;
     margin: 0.5%;
-    padding: 5px;
+    /* padding: 5px; */
     background: #f5e8d1;
     border: none; 
     position: relative;
@@ -108,15 +114,14 @@ nav{
     color: white; /* Text color */
 }
 
-
-#buto{
-    width: 23%;
-    height: 30px;
+#buto {
+    position: relative;
+    width: 30%;
+    height: 35px;
     margin: 0.5%;
-    padding: 5px;
+    /* padding: 5px; */
     background: #f5e8d1;
     border: none; 
-    position: relative;
     text-align: center;
     overflow: hidden;
 }
@@ -134,20 +139,23 @@ nav{
 }
 /* to show the tect on top */
 #buto span {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
-    color: white; /* Text color */
-    font-weight: bold;
-    font-size: 16px;
 }
 
+#buto span i {
+    margin-right: 5px;
+}
 
 .about{
     background: linear-gradient(to right, #464555 0%, #0f0f24 100%);
     padding-bottom: 1%;
     padding-top: 2%;
 }
-#about{
+#abot{
     text-align: center; 
     font-size: 37px; 
     color: white; 
@@ -182,41 +190,41 @@ nav{
             Hi, My name is <br>
             <span id="title" >Desmond Murangiri Mwirigi</span><br>
             <button id="career">Software Engineer</button><br>
-            <div style="padding-top: 15px; padding-left: 20px;">
-                Skills: Full Stack Developer, web designing, Android App Developer, <br>
-                Figma & Adobe XD. <br>
-                <a id="learn">Learn more 
-                    <span style="text-decoration: underline; color: #f5e8d1;"> about me</span></a>
-            </div>
+            
+           
         </p>
         </div>
         <div class="image">
-           <img id="image" src="close.jpg" alt="not found">
+            <img id="image" src="close.jpg" alt="not found">
         </div>
     </div>
     <div class="about">
-        <p id="about">About Me</p><br>
+        <p id="abot">About Me</p><br>
         <p style="text-align: center; color: white;">
-            <span style="color: #f5e8d1; font-size: 18px;">I am <span style="font-weight: bolder; font-size: 19px;"> Desmond Murangiri Mwririgi</span>, Full Stack developer / Graphic Designer</span><br>
-            I am a skilled Full Stack Developer with a pasion for web development and design. 
-            Pecializing in WorPress, I create vissualy stunning websits and offer litetime SSL 
-             support for secure experience. Proficient in stacks like Django and PHP,
-             I ensure seamless functionality and exeptional user experiences.
-        </p>
+            <span style="color: #f5e8d1; font-size: 18px; margin-left: 20Px; margin-right: 20px;">I am 
+                <span style="font-weight: bolder; font-size: 19px;"> Desmond Murangiri Mwririgi</span>,
+                <br> Full Stack developer & Graphic Designer</span><br>
+                <p style="margin-left: 10Px; margin-right:10px; color:white;">
+                    I am a skilled Full Stack Developer with a pasion for web development and design. 
+                    Pecializing in Figma, I create vissualy stunning websites and offer litetime SSL 
+                    support for secure experience. Proficient in stacks like Django and React Native,
+                    I ensure seamless functionality and exeptional user experiences.
+                </p>
+            </p>
         <div>
             <P style="text-align: center; margin-top: 2%; font-size: 25px; color: white; font-weight: bolder;">Skills</label> <P>
-            <div>
-                <button id="butt">Full Stack Development</button>
+            <div style="margin-left: 10Px; margin-right: 10px">
+                <button id="butt">Full Stack Developer</button>
                 <button id="butt">Graphic Designing</button>
+                <button id="butt">Android Development</button>
                 <button id="butt">Web Designing</button>
-                <button id="butt">Copywritting</button>
-                <button id="butt">Android App Development</button>
-                <button id="butt">Phython </button>
+                <button id="butt">Phython</button>
                 <button id="butt">JavaScript</button>
                 <button id="butt">React Native</button>
-                <button id="buto">AI & Machine Learning <span><i class="fa-solid fa-lock"></i></span></button>
-                <button id="buto">Game Learning <span><i class="fa-solid fa-lock"></i></span></button>
-                <button id="buto">Cyber Security <span><i class="fa-solid fa-lock"></i></span></button>
+                <button id="butt">Mongo DB</button>
+                <button id="buto">Machine Learning <span><i style="color: white;" class="fa-solid fa-lock"></i></span></button>
+                <button id="buto">Cyber Security <span><i style="color: white;" class="fa-solid fa-lock"></i></span></button>
+                <button id="but"><span>Learning...</span></button>
                 <button id="but"><span>Learning...</span></button>
             </div>
         </div>
@@ -233,6 +241,5 @@ nav{
         <div style="height: 100px;"></div>
         </div>
     </div>
-    
 </body>
 </html>
