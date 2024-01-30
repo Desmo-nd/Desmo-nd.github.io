@@ -2,6 +2,12 @@
     margin:0;
     padding: 0;
 }
+body {
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
 nav{
     height: 30px;
     width: 100%;
@@ -17,12 +23,16 @@ nav{
     font-weight: bolder; 
     color: #f5e8d1;
 }
+#title{
+    margin: 10px;
+}
 #career{
     background: linear-gradient(to top, #f5e8d1 0%, #f1c66e 100%);
     border: none; 
     font-size: large;
     padding-left: 20px; 
     padding-right: 20px;
+    /* margin:10px; */
 }
 #learn{
     font-size:smaller; 
@@ -61,21 +71,21 @@ nav{
     font-size: large;
 }
 .first{
-    padding-left: 20px;
+    padding-left: 10px;
 }
 #butt{
-    width: 23%;
-    height: 30px;
+    width: 30%;
+    height: 35px;
     margin: 0.5%;
-    padding: 5px;
+    /* padding: 5px; */
     background: #f5e8d1;
     border: none;
 }
 #but{
-    width: 23%;
-    height: 30px;
+    width: 30%;
+    height: 35px;
     margin: 0.5%;
-    padding: 5px;
+    /* padding: 5px; */
     background: #f5e8d1;
     border: none; 
     position: relative;
@@ -99,15 +109,14 @@ nav{
     color: white; /* Text color */
 }
 
-
-#buto{
-    width: 23%;
-    height: 30px;
+#buto {
+    position: relative;
+    width: 30%;
+    height: 35px;
     margin: 0.5%;
-    padding: 5px;
+    /* padding: 5px; */
     background: #f5e8d1;
     border: none; 
-    position: relative;
     text-align: center;
     overflow: hidden;
 }
@@ -125,28 +134,31 @@ nav{
 }
 /* to show the tect on top */
 #buto span {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
-    color: white; /* Text color */
-    font-weight: bold;
-    font-size: 16px;
 }
 
+#buto span i {
+    margin-right: 5px;
+}
 
 .about{
     background: linear-gradient(to right, #464555 0%, #0f0f24 100%);
     padding-bottom: 1%;
     padding-top: 2%;
 }
-#about{
+#abot{
     text-align: center; 
     font-size: 37px; 
     color: white; 
     font-weight: bold
 }
 #image{
-    height: 150px; 
-    width:150px; 
+    height: 130px; 
+    width:130px; 
     border-radius: 50%
 }
 .all{
