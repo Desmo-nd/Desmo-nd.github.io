@@ -19,13 +19,11 @@
     </nav> -->
     <div class="name">
        <div class="cont">
-        <p class="first">
-            Hi, My name is <br>
-            <span id="title" >Desmond Murangiri Mwirigi</span><br>
-            <button id="career">Software Engineer</button><br>
-            
-           
-        </p>
+            <p class="first">Hi all <span>&#128075</span>, I'm Desmond</p>
+            <p class="second">BSc. Software Engineering</p>
+            <div>
+               <button id="cv-btn" onclick="openPdf()">Download CV</button><br>
+            </div>
         </div>
         <div class="imag">
             <img id="image" src="close.jpg" alt="not found">
@@ -33,19 +31,21 @@
     </div>
     <div class="about">
         <p id="abot">About Me</p><br>
-        <p style="text-align: center; color: white;">
-            <span style="color: #f5e8d1; font-size: 18px; margin-left: 20Px; margin-right: 20px;">I am 
-                <span style="font-weight: bolder; font-size: 19px;"> Desmond Murangiri Mwririgi</span>,
-                <br> Full Stack developer & Graphic Designer</span><br>
-                <p style="margin-left: 10Px; margin-right:10px; color:white;">
-                    I am a skilled Full Stack Developer with a pasion for web development and design. 
-                    Pecializing in Figma, I create vissualy stunning websites and offer litetime SSL 
-                    support for secure experience. Proficient in stacks like Django and React Native,
-                    I ensure seamless functionality and exeptional user experiences.
-                </p>
-            </p>
+        <p style="text-align: center; color: white; font-family: montserrat;">
+            I am currently in my final year as a BSc. Software Engineering 
+            student at Kisii University. I am actively focusing on my coursework 
+            and utilizing available resources to further develop my expertise in 
+            various areas of the technology field. My proficiency spans across 
+            cloud computing, software development and design, and cyber security. 
+            I am constantly seeking opportunities to advance my skills and build 
+            a solid foundation for my career in the technology sector.
+
+        </p>
+        
+    </div>
+    <div class="skills">
         <div>
-            <P style="text-align: center; margin-top: 2%; font-size: 25px; color: white; font-weight: bolder;">Skills</label> <P>
+            <P style="text-align: center;  font-size: 25px; color: white; font-weight: bolder;">Skills</label> <P>
             <div style="margin-left: 10Px; margin-right: 10px">
                 <button id="butt">Full Stack Developer</button>
                 <button id="butt">Graphic Designing</button>
@@ -61,19 +61,69 @@
                 <button id="but"><span>Learning...</span></button>
             </div>
         </div>
-    </div>
-    <div class="name">
-        <div class="all">
-         
-         </div>
-         <div class="projects">
-
-         </div>
      </div>
+
+
      <div class="about">
-        <div style="height: 100px;"></div>
+        <P style="text-align: center;  font-size: 25px; color: white; font-weight: bolder;">Projects</label> <P>
+        
+            <div class="project">
+                <h3>Project 1</h3>
+               <div>
+                <div class="pic"></div>
+                <div class="description"></div>
+               </div>
+            </div>
+        
+            <div class="project">
+                <div class="project">
+                    <h3>Project 1</h3>
+                   <div>
+                    <div class="pic"></div>
+                    <div class="description"></div>
+                   </div>
+                </div>
+            </div>
+
+    </div>
+
+    <div class="contact-contianer">
+        <div class="">
+            <P style="text-align: center;  font-size: 25px; color: #f1c66e; font-weight: bolder;">Contact me</label> <P>
+            <div class="contact">
+                <div class="contact_info">
+                    <p>Contact Info</p>
+                    <p><a href="email:mwrigdesmond@gmail.com">mwrigdesmond@gmail.com</a></p>
+                    <p><a href="tel:+254 740524375">+254 0740 524 375</a></p>
+                    <p>Social Handles</p>
+                    <p><a href="https://www.linkedin.com/in/desmond-murangiri-9b0b3a1b0/">LinkedIn</a></p>
+                    <p><a href="x">Twitter</a></p>
+                    <p><a href="x">gitHub</a></p>
+                </div>
+                <div class="message">
+                    <p>Message Me</p>
+                    <form action="">
+                        <div class="box-wrapper"><input id="box" type="text" placeholder="Name"></div>
+                        <div class="box-wrapper"><input id="box" type="text" placeholder="Email"></div>
+                        <div class="box-wrapper"><textarea name="" id="textbox" cols="30" rows="10" placeholder="Message"></textarea></div>
+                        <div class="box-wrapper"><button id="send">Send</button></div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
+
+    <footer>
+        <div style="background-color: #0f0f24; padding: 20px; text-align: center; color: white;">
+            <p style="font-size: 12px; font-family: Montserrat, sans-serif;">&copy; 2024 Your desmondMurangir.me. All rights reserved.</p>
+        </div>
+    </footer>
+
     
+    <script>
+        function openPdf(){
+            window.open('CV.pdf', '_blank');
+        }
+    </script>
 </body>
 </html>
