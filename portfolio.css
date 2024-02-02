@@ -224,7 +224,7 @@ body {
 }
 #abot{
     text-align: center; 
-    font-size: 37px; 
+    font-size: 30px; 
     color: white; 
     font-weight: bold
 }
@@ -245,37 +245,92 @@ body {
 
 .contact-contianer{
     background: linear-gradient(to right, #0f0f24 0%, #464555 100%);
-    width: 100%;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-around;
 }
 .contact{
     background:transparent;
-    border: 2px solid #e6b800;
+    border: 1px solid #f5e8d1;
     display: flex;
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
     justify-content: space-between;
 }
-.box-wrapper{
+.contact_info {
+    width: 100%;
+    border-right: 1px solid #f5e8d1; /* Add border to the right side */
+    padding-right: 10px; /* Optional: Add some padding to the right side of the contact_info */
 }
-#box{
-  margin-top: 7px;
-    height: 35px;
-    /* margin: 0.5%; */
-    /* padding: 5px; */
+#social{
+    color: white;
+   font-family:"Montserrat", sans-serif; 
+    font-weight: bold;
+    margin-top: 20px;
+}
+.handles{
+    margin-left: 13px;
+    padding: 4px;
+
+}
+#handle{
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family:"Montserrat", sans-serif; 
+
+}
+.message{
     background: transparent;
-    border: 2px solid #e6b800;
+    width: 100%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding: 5px;
     overflow: hidden;
+}
+
+#box{
+    margin-top: 7px;
+    height: 20px;
+    margin: 0.5%; 
+    padding: 5px; 
+    background: transparent;
+    border: 1px solid #f5e8d1;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 95%;
 }
 
 #textbox{
     margin-top: 7px;
-   background: transparent;
-   border: 2px solid #e6b800;
-    width: 80%;
-
+    background: transparent;
+    border: 1px solid #f5e8d1;
+    border-radius: 5px;
+    width: 95%;
+    height: 90px;
+    margin: 0.5%; 
+    padding: 5px; 
 }
-
-#send{
-    margin-bottom: 7px;
+.box-wrap{
+    text-align: center;
     
 }
+#send{
+    margin-bottom: 7px;
+    background: #f5e8d1;
+    height: 20px;
+    color: #000;
+    max-width: 150px;
+    border: 1px solid #f5e8d1;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 1px 18px;
+    font-size: small;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 0;
+}
+
