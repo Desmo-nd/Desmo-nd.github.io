@@ -8,25 +8,49 @@
     <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
-    <!-- <nav>
+    <nav>
         <div class="logo"> 
             <img src="" alt="">
         </div>
         <div class="bar">
             <a href="">Home</a>
-            <a href="">CV</a>
+            <div>
+                <button id="cv-btn" onclick="openPdf()">Download CV</button><br>
+            </div>
         </div>
-    </nav> -->
+    </nav>
     <div class="name">
        <div class="cont">
-            <p class="first">Hi all <span>&#128075</span>, I'm Desmond</p>
-            <p class="second">BSc. Software Engineering</p>
+            <p class="first">Hello<span>&#128075,</span></p>
+            <p class="second">I Am Desmond</p>
+            <p class="third">Software Engineer</p>
+            <p class="fourth">I am a software engineer with a passion for technology and innovation. I am constantly seeking opportunities to advance my skills and build a solid foundation for my career in the technology sector.</p>
             <div>
-               <button id="cv-btn" onclick="openPdf()">Download CV</button><br>
+                <a href="mailto:mwirgdesmond@gmail.com">
+                    <button id="hire-btn">Hire Me <i class="fas fa-arrow-right"></i></button>
+                </a>
+            </div>
+            <div class="soshi">
+                <a style="text-decoration: none;" href="tel:+254 740524375">
+                    <i id="icon" class="fa-solid fa-phone"></i>
+                </a>
+                <a style="text-decoration: none;" href="mailto:mwirgdesmond@gmail.com">
+                    <i id="icon" class="fa-solid fa-envelope"></i>
+                </a>
+                <a style="text-decoration: none;" href="https://t.co/zZBKgCvsPH">
+                    <i id="icon" class="fa-brands fa-github"></i>
+                </a>
+                <a style="text-decoration: none;" href="https://twitter.com/DesmondMwirigi">
+                    <i id="icon" class="fa-brands fa-square-x-twitter"></i>
+                </a>
+                <a style="text-decoration: none;" href="https://www.linkedin.com/in/desmond-murangiri-9b0b3a1b0/">
+                    <i id="icon" class="fa-brands fa-linkedin"></i>
+                </a>
             </div>
         </div>
         <div class="imag">
-            <img id="image" src="close.jpg" alt="not found">
+            <div class="back"></div>
+            <img id="image" src="profilebg.png" alt="not found">
         </div>
     </div>
     <div class="about">
@@ -42,21 +66,28 @@
 
         </p>
         
-    </div>
-    <div class="skills">
+ 
         <div>
-            <P style="text-align: center;  font-size: 25px; color: white; font-weight: bolder;">Skills</label> <P>
-            <div style="margin-left: 10Px; margin-right: 10px">
-                <button id="butt">Full Stack Developer</button>
+            <P style="text-align: center;  font-size: 25px; color: white; font-weight: bolder; margin-top: 16px;">Skills</label> <P>
+            <div style="margin-left: 5%; margin-right: 10px">
+                <button id="butt">Full Stack Dev</button>
                 <button id="butt">Graphic Designing</button>
-                <button id="butt">Android Development</button>
+                <button id="butt">Android Dev</button>
                 <button id="butt">Web Designing</button>
                 <button id="butt">Phython</button>
                 <button id="butt">JavaScript</button>
                 <button id="butt">React Native</button>
                 <button id="butt">Mongo DB</button>
-                <button id="buto">Machine Learning <span><i style="color: white;" class="fa-solid fa-lock"></i></span></button>
-                <button id="buto">Cyber Security <span><i style="color: white;" class="fa-solid fa-lock"></i></span></button>
+                <button id="buto">Machine Learning 
+                    <span>
+                        <i style="color: white;" class="fa-solid fa-lock"></i>
+                    </span>
+                </button>
+                <button id="buto">Cyber Security 
+                    <span>
+                        <i style="color: white;" class="fa-solid fa-lock"></i>
+                    </span>
+                </button>
                 <button id="but"><span>Learning...</span></button>
                 <button id="but"><span>Learning...</span></button>
             </div>
@@ -64,49 +95,99 @@
      </div>
 
 
-     <div class="about">
-        <P style="text-align: center;  font-size: 25px; color: white; font-weight: bolder;">Projects</label> <P>
-        
-            <div class="project">
-                <h3>Project 1</h3>
-               <div>
-                <div class="pic"></div>
-                <div class="description"></div>
-               </div>
-            </div>
-        
-            <div class="project">
-                <div class="project">
-                    <h3>Project 1</h3>
-                   <div>
-                    <div class="pic"></div>
-                    <div class="description"></div>
-                   </div>
-                </div>
-            </div>
 
+    <div class="proj-container">
+        <div style="width: 90%; margin-left: 5%;">
+            <P style="text-align: center;  font-size: 25px; color: white; font-weight: bolder;">Projects</label> <P>
+
+            <div class="projects">
+                <div class="project">
+                    <div class="pot">
+                        <p id="skill">All</p>
+                        <p id="skill">Web Design</p>
+                        <p id="skill">Android App</p>
+                        <p id="skill">Graphic Design</p>
+                    </div>
+                </div>
+                <div class="pic-container">
+                    <div class="proj">
+                        <div class="pics">
+            
+                        </div>
+                        <div class="pics">
+            
+                        </div>
+                        <div class="pics">
+            
+                        </div>
+                    
+                    </div>
+                    <div class="projo">
+                        <div class="pics">
+            
+                        </div>
+                        <div class="pics">
+            
+                        </div>
+                        <div class="pics">
+            
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
     </div>
 
-    <div class="contact-contianer">
-        <div class="">
-            <P style="text-align: center;  font-size: 25px; color: #f1c66e; font-weight: bolder;">Contact me</label> <P>
+    <div class="about">
+        <div style="width: 90%; margin-left: 5%; ">
+            <P style="text-align: center;  font-size: 25px; color: #f5e8d1; font-weight: bolder;">Contact me</label> <P>
             <div class="contact">
                 <div class="contact_info">
-                    <p>Contact Info</p>
-                    <p><a href="email:mwrigdesmond@gmail.com">mwrigdesmond@gmail.com</a></p>
-                    <p><a href="tel:+254 740524375">+254 0740 524 375</a></p>
-                    <p>Social Handles</p>
-                    <p><a href="https://www.linkedin.com/in/desmond-murangiri-9b0b3a1b0/">LinkedIn</a></p>
-                    <p><a href="x">Twitter</a></p>
-                    <p><a href="x">gitHub</a></p>
+                    <div style="margin: 7px;">
+                        <p id="social">Contact Info</p>
+                        <p class="handles">
+                            <a style="text-decoration: none;" href="mailto:mwirgdesmond@gmail.com">
+                                <i style="color: #f5e8d1; font-size: 15px;" class="fa-solid fa-envelope">
+                                </i><label id="handle">email</label>
+                            </a>
+                        </p>
+                        <p class="handles">
+                            <a style="text-decoration: none;" href="tel:+254 740524375">
+                                <i style="color: #f5e8d1;" class="fa-solid fa-phone"></i>
+                                <label id="handle">+254 740 524 375</label>
+                            </a>
+                        </p>
+                        
+                       
+                        <p id="social">Social Handles</p>
+                        <p class="handles">
+                            <a style="text-decoration: none;" href="https://t.co/zZBKgCvsPH">
+                                <i style="color: #f5e8d1;" class="fa-brands fa-github"></i>
+                                <labe id="handle">Desmon-nd</label>
+                            </a>
+                        </p>
+                        <p class="handles">
+                            <a style="text-decoration: none;" href="https://twitter.com/DesmondMwirigi">
+                                <i style="color: #f5e8d1;" class="fa-brands fa-square-x-twitter"></i>
+                                <label id="handle">DesmondMwirigi</label>
+                            </a>
+                        </p>
+                        <p class="handles">
+                            <a style="text-decoration: none;" href="https://www.linkedin.com/in/desmond-murangiri-9b0b3a1b0/">
+                                <i style="color: #f5e8d1; font-size: 15px;" class="fa-brands fa-linkedin"></i>
+                                <label id="handle">Desmond Murangiri</label>
+                            </a>
+                        </p>
+                        
+                       
+                    </div>    
                 </div>
                 <div class="message">
-                    <p>Message Me</p>
                     <form action="">
                         <div class="box-wrapper"><input id="box" type="text" placeholder="Name"></div>
                         <div class="box-wrapper"><input id="box" type="text" placeholder="Email"></div>
                         <div class="box-wrapper"><textarea name="" id="textbox" cols="30" rows="10" placeholder="Message"></textarea></div>
-                        <div class="box-wrapper"><button id="send">Send</button></div>
+                        <div class="box-wrap"><button id="send">Send</button></div>
                     </form>
                 </div>
             </div>
