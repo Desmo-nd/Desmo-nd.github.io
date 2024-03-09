@@ -30,7 +30,7 @@ nav{
     padding-right: 1%;
 }
 .cont{
-    width: 60%;
+    width: 60vh;
     margin-top: 20vh;
 }
 .first{
@@ -141,8 +141,8 @@ nav{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #f1c66e;
-    height: 40%;
-    width: 40%;
+    height: 40vh;
+    width: 40vh;
     border-radius: 50%;
     z-index: 0; /* Ensure the background is behind the image */
 }
@@ -150,8 +150,8 @@ nav{
 #image {
     position: relative;
     z-index: 1; /* Ensure the image is on top of the background */
-    height: 50%;
-    width: 50%;
+    height: 50vh;
+    width: 50vh;
     border-radius: 50%;
 }
 
