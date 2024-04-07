@@ -129,7 +129,6 @@ nav{
     border: none;
 }
 
-
 .imag {
     position: relative;
     margin-top: 10vh;
@@ -154,8 +153,6 @@ nav{
     width: 50vh;
     border-radius: 50%;
 }
-
-
 
 #cv-btn {
     height: 30px;
@@ -317,7 +314,7 @@ nav{
     padding-right: 1%;
 }
 .project{
-    border-right: 1px solid #f5e8d1; /* Add border to the right side */
+    border-right: 1px solid #f5e8d1; 
     padding-right: 10px;
     margin-bottom: 20px; 
     width:30%
@@ -458,3 +455,45 @@ nav{
     z-index: 0;
 }
 
+@media screen and (max-width: 768px) {
+    .name {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imag {
+        order: -1; /* Move the image section to the top */
+        margin-top: 10vh;
+    }
+    .back {
+        margin-top: 9vh;
+        margin-left: 0.5vh;
+        height: 30vh; 
+        width: 31vh; 
+    }
+
+    #image {
+        max-height: 35vh; 
+        max-width: 35vh; 
+    }
+    .cont {
+        width: 80%; 
+        margin-top: 3vh; 
+        text-align: center; 
+    }
+
+    .first {
+        font-size: 3vh; 
+
+    .second {
+        font-size: 5vh; 
+    }
+
+    .third {
+        font-size: 2vh; /* Adjust font size for smaller screens */
+    }
+
+    .fourth {
+        font-size: 1.5vh; /* Adjust font size for smaller screens */
+    }
+}
