@@ -110,7 +110,7 @@ nav{
     padding-left: 20px;
 }
 .bar{
-    display: block;
+    /* display: block; */
     padding-right: 20px;
     padding-top: 5px;
 
@@ -121,6 +121,23 @@ nav{
     text-decoration: none;
     color: white;
     
+}
+#menu-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #0f0f24;
+    z-index: 1000; /* Ensure the menu is on top of other content */
+}
+
+#menu-links a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
 }
 #me{
     padding-left:2px ;
@@ -379,8 +396,8 @@ nav{
 }
 .contact_info {
     width: 100%;
-    border-right: 1px solid #f5e8d1; /* Add border to the right side */
-    padding-right: 10px; /* Optional: Add some padding to the right side of the contact_info */
+    border-right: 1px solid #f5e8d1; 
+    padding-right: 10px; 
 }
 #social{
     color: white;
@@ -463,10 +480,10 @@ nav{
 
     .imag {
         order: -1; /* Move the image section to the top */
-        margin-top: 10vh;
+        margin-top: -20vh;
     }
     .back {
-        margin-top: 9vh;
+        margin-top: 9.3vh;
         margin-left: 0.5vh;
         height: 30vh; 
         width: 31vh; 
@@ -481,20 +498,32 @@ nav{
         margin-top: 3vh; 
         text-align: center; 
     }
-
-    .first {
-            font-size: 3vh; 
-
-        .second {
-            font-size: 5vh; 
-        }
-
-        .third {
-            font-size: 2vh; /* Adjust font size for smaller screens */
-        }
-
-        .fourth {
-            font-size: 1.5vh; /* Adjust font size for smaller screens */
-        }
+    #abot{
+        font-size: 20px;
     }
-}
+    .first {
+            font-size: 2vh; 
+            margin-top: -20vh;
+
+    }
+    .second {
+        font-size: 2vh; 
+    }
+
+    .third {
+        font-size: 2vh; 
+    }
+
+    .fourth {
+        font-size: 1vh; 
+    }
+    .cont {
+    }
+    #hire-btn {
+        margin-top: 0vh; 
+    }
+    .soshi {
+        margin-top: 0vh; 
+    }
+
+    }
