@@ -483,17 +483,18 @@ nav{
     }
 
     .first {
-        font-size: 3vh; 
+            font-size: 3vh; 
 
-    .second {
-        font-size: 5vh; 
-    }
+        .second {
+            font-size: 5vh; 
+        }
 
-    .third {
-        font-size: 2vh; /* Adjust font size for smaller screens */
-    }
+        .third {
+            font-size: 2vh; /* Adjust font size for smaller screens */
+        }
 
-    .fourth {
-        font-size: 1.5vh; /* Adjust font size for smaller screens */
+        .fourth {
+            font-size: 1.5vh; /* Adjust font size for smaller screens */
+        }
     }
 }
