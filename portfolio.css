@@ -383,7 +383,6 @@ nav{
 }
 .contact-contianer{
     background: linear-gradient(to right, #0f0f24 0%, #464555 100%);
-    /* width: 100%; */
     display: flex;
     justify-content: space-around;
 }
