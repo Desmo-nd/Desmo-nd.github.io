@@ -110,7 +110,7 @@ nav{
     padding-left: 20px;
 }
 .bar{
-    display: block;
+    /* display: block; */
     padding-right: 20px;
     padding-top: 5px;
 
@@ -122,13 +122,29 @@ nav{
     color: white;
     
 }
+#menu-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #0f0f24;
+    z-index: 1000; /* Ensure the menu is on top of other content */
+}
+
+#menu-links a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
 #me{
     padding-left:2px ;
     padding-right: 2px;
     border-radius: 5px;
     border: none;
 }
-
 
 .imag {
     position: relative;
@@ -154,8 +170,6 @@ nav{
     width: 50vh;
     border-radius: 50%;
 }
-
-
 
 #cv-btn {
     height: 30px;
@@ -317,7 +331,7 @@ nav{
     padding-right: 1%;
 }
 .project{
-    border-right: 1px solid #f5e8d1; /* Add border to the right side */
+    border-right: 1px solid #f5e8d1; 
     padding-right: 10px;
     margin-bottom: 20px; 
     width:30%
@@ -369,7 +383,6 @@ nav{
 }
 .contact-contianer{
     background: linear-gradient(to right, #0f0f24 0%, #464555 100%);
-    /* width: 100%; */
     display: flex;
     justify-content: space-around;
 }
@@ -382,8 +395,8 @@ nav{
 }
 .contact_info {
     width: 100%;
-    border-right: 1px solid #f5e8d1; /* Add border to the right side */
-    padding-right: 10px; /* Optional: Add some padding to the right side of the contact_info */
+    border-right: 1px solid #f5e8d1; 
+    padding-right: 10px; 
 }
 #social{
     color: white;
@@ -458,3 +471,54 @@ nav{
     z-index: 0;
 }
 
+@media screen and (max-width: 768px) {
+    .name {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imag {
+        order: -1; /* Move the image section to the top */
+        margin-top: -20vh;
+    }
+    .back {
+        margin-top: 9.3vh;
+        margin-left: 0.5vh;
+        height: 30vh; 
+        width: 31vh; 
+    }
+
+    #image {
+        max-height: 35vh; 
+        max-width: 35vh; 
+    }
+    .cont {
+        width: 80%; 
+        margin-top: -24vh; 
+        text-align: center; 
+    }
+    #abot{
+        font-size: 20px;
+    }
+    .first {
+            font-size: 3vh; 
+    }
+    .second {
+        font-size: 2.8vh; 
+    }
+
+    .third {
+        font-size: 2.8vh; 
+    }
+
+    .fourth {
+        font-size: 1.9vh; 
+    }
+    #hire-btn {
+        margin-top: 0vh; 
+    }
+    .soshi {
+        margin-top: 0vh; 
+    }
+
+    }
