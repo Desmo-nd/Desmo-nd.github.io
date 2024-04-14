@@ -151,6 +151,7 @@ nav{
     margin-top: 10vh;
 }
 
+
 .back {
     position: absolute;
     top: 30%;
@@ -160,7 +161,8 @@ nav{
     height: 40vh;
     width: 40vh;
     border-radius: 50%;
-    z-index: 0; /* Ensure the background is behind the image */
+    z-index: 0; 
+    box-shadow: 0 0 30px 10px rgba(241, 198, 110, 0.8); 
 }
 
 #image {
