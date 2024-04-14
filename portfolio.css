@@ -339,36 +339,39 @@ nav{
 }
 
 .pic-container{
- width: 100%;
- margin-left: 3%;
- height: 250px;
-}
-.proj{
     width: 100%;
-    height: 40%;
-    margin-bottom: 5%;
+    margin-left: 3%;
+    height: 74vh;
+}
+.proj {
+    width: 100%;
+    height: 45%;
+    margin-bottom: 4%;
     display: flex;
     justify-content: space-between;
-}
-.projo{
-    width: 100%;
-    height: 40%;
-    display: flex;
-    justify-content: space-between;
-}
-.pics {
-    display: inline-block;
-    height: 100%; /* Set the desired height */
-    width:30%; /* Set the desired width */
-    overflow: hidden; /* Ensure that images do not overflow the container */
-    border: 1px solid #f5e8d1;
 }
 
+.projo {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pics {
+    display: inline-block;
+    height: 100%;
+    width: 30%;
+    border: 1px solid #f5e8d1;
+    overflow: hidden; 
+}
 .pics img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: stretch; /* Ensure the image covers the entire container */
+    object-position: center; /* Center the image within the container */
 }
+
 
 
 
@@ -518,8 +521,18 @@ nav{
         margin-top: 0vh; 
     }
     .soshi {
+        width: 60%;
         margin-top: 0vh; 
-        margin-left:19%;
-    }
+
+
+
+    /* .pic-container {
+        width: 90%;
+        margin: 0 auto;
+    /* }
+    .proj {
+        flex-direction: column; 
+        align-items: center; 
+    } */
 
     }
