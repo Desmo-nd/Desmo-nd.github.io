@@ -392,6 +392,15 @@ nav{
     font-size: large;
 }
 
+#skill{
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family:"Montserrat", sans-serif; 
+    margin-top: 7px;
+    font-weight:800
+}
 
 
 @keyframes fadeInUp {
@@ -467,7 +476,7 @@ nav{
 
 }
 
-.pic-container{
+/* .pic-container{
     width: 100%;
     margin-left: 3%;
     height: auto;
@@ -483,14 +492,14 @@ nav{
     flex: 1 1 calc(33.33% - 10px);
     margin-bottom: 10px;
     box-sizing: border-box;
-    /* border: 1px solid #f5e8d1; */
+    border: 1px solid #f5e8d1;
     overflow: hidden;
     height: 0;
     position: relative;
     padding-bottom: 75%;
 
-}
-.pics img {
+} */
+/* .pics img {
     position: absolute;
     top: 0;
     left: 0;
@@ -499,10 +508,119 @@ nav{
     object-fit: cover; 
     object-position: center; 
     padding: 8px;
-    /* border-radius: 20px; */
+} */
 
-
+/* General container styling */
+.pic-container {
+    width: 100%;
+    margin-left: 3%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; /* Ensure the images wrap within the container */
+    justify-content: space-between;
 }
+
+.proj, .projo {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pics {
+    flex: 1 1 calc(33.333% - 10px);
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #f5e8d1;
+    overflow: hidden;
+    position: relative;
+    height: 0;
+    padding-bottom: 75%;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pics img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+/* Hover effect */
+.pics:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pics:hover::before {
+    content: '→';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* Pop-up styling */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1000; /* Ensure it's on top */
+    overflow: auto;
+    padding: 20px;
+}
+
+.popup img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.popup .details {
+    margin-top: 20px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f5e8d1;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 50%;
+    /* padding: 5px 10px; */
+}
+
+.overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999; /* Ensure it's behind the popup but on top of other content */
+}
+
 @media (max-width: 768px) {
     .pics{
         flex: 1 1 calc(50% - 10px);
@@ -515,15 +633,72 @@ nav{
     }
 }
 
-#skill{
+/* .pics:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */
+
+/* .pics:hover::before {
+    content: '_';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #fff;
-    margin-left: 10px;
-    text-decoration: none;
-    font-size: 14px;
-    font-family:"Montserrat", sans-serif; 
-    margin-top: 7px;
-    font-weight:800
+    font-size: 2em;
+    opacity: 0.7;
+} */
+
+
+/* .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index:1000;
+    overflow: auto;
+    padding: 20px;
 }
+
+.popup img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.popup .details{
+    margin-top: 20px;
+} */
+
+/* .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f5e8d1;
+    border: none;
+    font-size:1.5em ;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+} */
+
+
 
 
 

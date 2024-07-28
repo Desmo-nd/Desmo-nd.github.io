@@ -121,30 +121,41 @@
                         <p id="skill">Graphic Design</p>
                     </div>
                 </div>
+
                 <div class="pic-container">
                     <div class="proj">
-                        <div class="pics">
-                            <img src="icta_books.png" alt="Your Image">
+                        <div class="pics" data-details="Details about ICTA Books project">
+                            <img src="icta_books.png" alt="ICTA Books">
                         </div>
-                        <div class="pics">
-                            <img src="kitchen.png" alt="Your Image">
+                        <div class="pics" data-details="Details about Kitchen project">
+                            <img src="kitchen.png" alt="Kitchen">
                         </div>
-                        <div class="pics">
-                            <img src="jirani.jpeg" alt="Your Image">
+                        <div class="pics" data-details="Details about Jirani project">
+                            <img src="jirani.jpeg" alt="Jirani">
                         </div>
                     </div>
                     <div class="projo">
-                        <div class="pics">
-                            <img src="stay.jpeg" alt="Your Image">
+                        <div class="pics" data-details="Details about Stay project">
+                            <img src="stay.jpeg" alt="Stay">
                         </div>
-                        <div class="pics">
-                            <img src="jobmt.jpeg" alt="Your Image">
+                        <div class="pics" data-details="Details about JobMT project">
+                            <img src="jobmt.jpeg" alt="JobMT">
                         </div>
-                        <div class="pics">
-                            <img src="skill.jpeg" alt="Your Image">
+                        <div class="pics" data-details="Details about Skill project">
+                            <img src="skill.jpeg" alt="Skill">
                         </div>
                     </div>
-                </div>                
+                </div>
+                
+                <div class="overlay"></div>
+                <div class="popup">
+                    <button class="popup-close">&times;</button>
+                    <img src="" alt="Project Image">
+                    <div class="details"></div>
+                </div>
+                
+                
+
             </div>    
         </div>
     </div>
@@ -225,6 +236,40 @@
         }
     }
 
+
+
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const pics = document.querySelectorAll('.pics');
+        const overlay = document.querySelector('.overlay');
+        const popup = document.querySelector('.popup');
+        const popupImage = document.querySelector('.popup img');
+        const popupDetails = document.querySelector('.popup .details');
+        const popupClose = document.querySelector('.popup-close');
+
+        pics.forEach(pic => {
+            pic.addEventListener('click', () => {
+                const imgSrc = pic.querySelector('img').src;
+                const details = pic.getAttribute('data-details');
+                
+                popupImage.src = imgSrc;
+                popupDetails.innerHTML = details;
+                
+                overlay.style.display = 'block';
+                popup.style.display = 'block';
+            });
+        });
+
+        overlay.addEventListener('click', () => {
+            overlay.style.display = 'none';
+            popup.style.display = 'none';
+        });
+
+        popupClose.addEventListener('click', () => {
+            overlay.style.display = 'none';
+            popup.style.display = 'none';
+        });
+    });
     </script>
 </body>
 </html>
