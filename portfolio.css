@@ -28,7 +28,40 @@ nav{
     font-size: large;
     padding-left: 1%;
     padding-right: 1%;
+   
 }
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.cont {
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.imag {
+    animation: slideInFromRight 1s ease-out;
+}
+
 .cont{
     width: 60vh;
     margin-top: 20vh;
@@ -37,12 +70,30 @@ nav{
     font-size: 5vh;
     font-family:"Montserrat", sans-serif; 
 }
+
+.wave {
+    display: inline-block;
+    animation: wave 1s infinite;
+    transform-origin: 70% 70%;
+}
+@keyframes wave {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(-20deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(20deg);}
+    100% {transform: rotate(0deg);}
+}
+
+
 .second{
     margin-top: 4px;
     font-weight:bolder;
     font-weight: 300;
-    font-size: 7vh;
+    font-size: 4vh;
     font-family:"Montserrat", sans-serif; 
+}
+#nam{
+    color: #f1c66e;
 }
 .third{
     margin-top: 4px;
@@ -129,7 +180,7 @@ nav{
     left: 0;
     width: 100%;
     background-color: #0f0f24;
-    z-index: 1000; /* Ensure the menu is on top of other content */
+    z-index: 1000; 
 }
 
 #menu-links a {
@@ -237,7 +288,6 @@ nav{
     border: none; 
     position: relative;
 }
-/* to show the shadow over the background color */
 #but::before{ 
     content: "";
     position: absolute;
@@ -267,7 +317,7 @@ nav{
     text-align: center;
     overflow: hidden;
 }
-/* to show the shadow over the background color */
+
 #buto::before{ 
     content: "";
     position: absolute;
@@ -293,22 +343,44 @@ nav{
 }
 
 
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#about {
+    animation: fadeInUp 1s ease-out;
+}
+
+#skills {
+    animation: fadeInUp 1s ease-out;
+    animation-delay: 0.5s;
+}
+
 .about{
     background: linear-gradient(to right, #464555 0%, #0f0f24 100%);
     padding-bottom: 1%;
     padding-top: 2%;
     padding-left: 7px;
     padding-right: 7px;
-    
+}
+.InnerAbout{
+    width: 86%;
+    margin: auto;
 }
 #abot{
     text-align: center; 
     font-size: 30px; 
-    color: white; 
+    color: #f1c66e;
     font-weight: bold
 }
-
-
 
 .skills{
     background: linear-gradient(to right, #0f0f24 0%, #464555 100%);
@@ -320,63 +392,128 @@ nav{
     font-size: large;
 }
 
-.proj-container{
-    background: linear-gradient(to right, #0f0f24 0%, #464555 100%);
-    
+
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
+
+.proj-container {
+    animation: fadeInUp 1s ease-out;
+    background: linear-gradient(to right, #0f0f24 0%, #464555 100%);
+
+}
+
+.pics {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.pics:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.pics:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.pics:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.pics:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.pics:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.pics:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+
 .projects{
-    /* width: 98%; */
+    width: 92%;
     display: flex;
     margin-top: 20px;
     color: white;
     font-size: large;
     padding-left: 1%;
     padding-right: 1%;
+    margin: auto;
+}
+#proje{
+    text-align: center;
+    font-size: 25px; 
+    color: #f1c66e; 
+    font-weight: bolder;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .project{
     border-right: 1px solid #f5e8d1; 
     padding-right: 10px;
     margin-bottom: 20px; 
-    width:30%
+    width:20%
 
 }
 
 .pic-container{
     width: 100%;
     margin-left: 3%;
-    height: 74vh;
+    height: auto;
 }
-.proj {
+.proj, .projo {
     width: 100%;
-    height: 45%;
-    margin-bottom: 4%;
     display: flex;
-    justify-content: space-between;
-}
-
-.projo {
-    width: 100%;
-    height: 45%;
-    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .pics {
-    display: inline-block;
-    height: 100%;
-    width: 30%;
-    border: 1px solid #f5e8d1;
-    overflow: hidden; 
+    flex: 1 1 calc(33.33% - 10px);
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    /* border: 1px solid #f5e8d1; */
+    overflow: hidden;
+    height: 0;
+    position: relative;
+    padding-bottom: 75%;
+
 }
 .pics img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: stretch; /* Ensure the image covers the entire container */
-    object-position: center; /* Center the image within the container */
+    object-fit: cover; 
+    object-position: center; 
+    padding: 8px;
+    /* border-radius: 20px; */
+
+
+}
+@media (max-width: 768px) {
+    .pics{
+        flex: 1 1 calc(50% - 10px);
+    }
 }
 
-
-
+@media (max-width: 480) {
+    .pic {
+        flex: 1 1 100%;
+    }
+}
 
 #skill{
     color: #fff;
@@ -387,6 +524,9 @@ nav{
     margin-top: 7px;
     font-weight:800
 }
+
+
+
 .contact-contianer{
     background: linear-gradient(to right, #0f0f24 0%, #464555 100%);
     display: flex;
@@ -398,6 +538,7 @@ nav{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    animation: fadeIn 1s ease-out;
 }
 .contact_info {
     width: 100%;
@@ -476,6 +617,46 @@ nav{
     overflow: hidden;
     z-index: 0;
 }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+#contactMe{
+    text-align: center;  
+    font-size: 25px; 
+    color: #f5e8d1; 
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+.contact_info, .message {
+    opacity: 0;
+    animation: slideUp 1s ease-out forwards;
+}
+
+.contact_info {
+    animation-delay: 0.5s;
+}
+
+.message {
+    animation-delay: 1s;
+}
 
 @media screen and (max-width: 768px) {
     .name {
@@ -528,7 +709,7 @@ nav{
         margin-top: 0vh; 
         margin-left: 19%;
 
-
+    }
     /* .pic-container {
         width: 90%;
         margin: 0 auto;
@@ -537,5 +718,4 @@ nav{
         flex-direction: column; 
         align-items: center; 
     } */
-
-    }
+}
