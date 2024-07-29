@@ -28,7 +28,40 @@ nav{
     font-size: large;
     padding-left: 1%;
     padding-right: 1%;
+   
 }
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.cont {
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.imag {
+    animation: slideInFromRight 1s ease-out;
+}
+
 .cont{
     width: 60vh;
     margin-top: 20vh;
@@ -37,12 +70,30 @@ nav{
     font-size: 5vh;
     font-family:"Montserrat", sans-serif; 
 }
+
+.wave {
+    display: inline-block;
+    animation: wave 1s infinite;
+    transform-origin: 70% 70%;
+}
+@keyframes wave {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(-20deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(20deg);}
+    100% {transform: rotate(0deg);}
+}
+
+
 .second{
     margin-top: 4px;
     font-weight:bolder;
     font-weight: 300;
-    font-size: 7vh;
+    font-size: 4vh;
     font-family:"Montserrat", sans-serif; 
+}
+#nam{
+    color: #f1c66e;
 }
 .third{
     margin-top: 4px;
@@ -129,7 +180,7 @@ nav{
     left: 0;
     width: 100%;
     background-color: #0f0f24;
-    z-index: 1000; /* Ensure the menu is on top of other content */
+    z-index: 1000; 
 }
 
 #menu-links a {
@@ -149,6 +200,7 @@ nav{
 .imag {
     position: relative;
     margin-top: 10vh;
+    
 }
 
 
@@ -236,7 +288,6 @@ nav{
     border: none; 
     position: relative;
 }
-/* to show the shadow over the background color */
 #but::before{ 
     content: "";
     position: absolute;
@@ -266,7 +317,7 @@ nav{
     text-align: center;
     overflow: hidden;
 }
-/* to show the shadow over the background color */
+
 #buto::before{ 
     content: "";
     position: absolute;
@@ -292,22 +343,44 @@ nav{
 }
 
 
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#about {
+    animation: fadeInUp 1s ease-out;
+}
+
+#skills {
+    animation: fadeInUp 1s ease-out;
+    animation-delay: 0.5s;
+}
+
 .about{
     background: linear-gradient(to right, #464555 0%, #0f0f24 100%);
     padding-bottom: 1%;
     padding-top: 2%;
     padding-left: 7px;
     padding-right: 7px;
-    
+}
+.InnerAbout{
+    width: 86%;
+    margin: auto;
 }
 #abot{
     text-align: center; 
     font-size: 30px; 
-    color: white; 
+    color: #f1c66e;
     font-weight: bold
 }
-
-
 
 .skills{
     background: linear-gradient(to right, #0f0f24 0%, #464555 100%);
@@ -319,64 +392,6 @@ nav{
     font-size: large;
 }
 
-.proj-container{
-    background: linear-gradient(to right, #0f0f24 0%, #464555 100%);
-    
-}
-.projects{
-    /* width: 98%; */
-    display: flex;
-    margin-top: 20px;
-    color: white;
-    font-size: large;
-    padding-left: 1%;
-    padding-right: 1%;
-}
-.project{
-    border-right: 1px solid #f5e8d1; 
-    padding-right: 10px;
-    margin-bottom: 20px; 
-    width:30%
-
-}
-
-.pic-container{
-    width: 100%;
-    margin-left: 3%;
-    height: 74vh;
-}
-.proj {
-    width: 100%;
-    height: 45%;
-    margin-bottom: 4%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.projo {
-    width: 100%;
-    height: 45%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.pics {
-    display: inline-block;
-    height: 100%;
-    width: 30%;
-    border: 1px solid #f5e8d1;
-    overflow: hidden; 
-}
-.pics img {
-    width: 100%;
-    height: 100%;
-    object-fit: stretch; /* Ensure the image covers the entire container */
-    object-position: center; /* Center the image within the container */
-}
-
-
-
-
 #skill{
     color: #fff;
     margin-left: 10px;
@@ -386,6 +401,208 @@ nav{
     margin-top: 7px;
     font-weight:800
 }
+
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.proj-container {
+    animation: fadeInUp 1s ease-out;
+    background: linear-gradient(to right, #0f0f24 0%, #464555 100%);
+
+}
+
+.pics {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.pics:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.pics:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.pics:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.pics:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.pics:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.pics:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+
+.projects{
+    width: 92%;
+    display: flex;
+    margin-top: 20px;
+    color: white;
+    font-size: large;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin: auto;
+}
+#proje{
+    text-align: center;
+    font-size: 25px; 
+    color: #f1c66e; 
+    font-weight: bolder;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.project{
+    border-right: 1px solid #f5e8d1; 
+    padding-right: 10px;
+    margin-bottom: 20px; 
+    width:20%
+
+}
+
+
+
+/* General container styling */
+.pic-container {
+    width: 100%;
+    margin-left: 3%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; /* Ensure the images wrap within the container */
+    justify-content: space-between;
+}
+
+.proj, .projo {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pics {
+    flex: 1 1 calc(33.333% - 10px);
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #f5e8d1;
+    overflow: hidden;
+    position: relative;
+    height: 0;
+    padding-bottom: 75%;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pics img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+/* Hover effect */
+.pics:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pics:hover::before {
+    content: '→';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* Pop-up styling */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1000; /* Ensure it's on top */
+    overflow: auto;
+    padding: 20px;
+}
+
+.popup img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.popup .details {
+    margin-top: 20px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f5e8d1;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 50%;
+    /* padding: 5px 10px; */
+}
+
+.overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999; /* Ensure it's behind the popup but on top of other content */
+}
+
+@media (max-width: 768px) {
+    .pics{
+        flex: 1 1 calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480) {
+    .pic {
+        flex: 1 1 100%;
+    }
+}
+
+
+
 .contact-contianer{
     background: linear-gradient(to right, #0f0f24 0%, #464555 100%);
     display: flex;
@@ -397,6 +614,7 @@ nav{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    animation: fadeIn 1s ease-out;
 }
 .contact_info {
     width: 100%;
@@ -475,6 +693,46 @@ nav{
     overflow: hidden;
     z-index: 0;
 }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+#contactMe{
+    text-align: center;  
+    font-size: 25px; 
+    color: #f5e8d1; 
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+.contact_info, .message {
+    opacity: 0;
+    animation: slideUp 1s ease-out forwards;
+}
+
+.contact_info {
+    animation-delay: 0.5s;
+}
+
+.message {
+    animation-delay: 1s;
+}
 
 @media screen and (max-width: 768px) {
     .name {
@@ -527,14 +785,6 @@ nav{
         margin-top: 0vh; 
         margin-left: 19%;
 
-
-    /* .pic-container {
-        width: 90%;
-        margin: 0 auto;
-    /* }
-    .proj {
-        flex-direction: column; 
-        align-items: center; 
-    } */
-
     }
+    
+}
