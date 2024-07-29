@@ -12,8 +12,8 @@
         <div class="logo"> 
             <img src="" alt="">
         </div>
-        <div class="bar">
-            <!-- <button onclick="toggleMenu()"><i class="fas fa-bars"></i></button> -->
+        <!-- <div class="bar">
+            <button onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
             <div id="menu-links">
                 <a href="#">Home</a>
                 <a href="#about">About Me</a>
@@ -21,13 +21,13 @@
                 <a href="#skills">Skills</a>
                 <a href="#contact">Contact Me</a>
             </div>
-        </div>
+        </div> -->
     </nav>
     <div class="name">
-       <div class="cont">
-            <p class="first">Hello<span>&#128075,</span></p>
-            <p class="second">I Am Desmond</p>
-            <p class="third">Software Engineer</p>
+        <div class="cont">
+            <p class="first">Hello<span class="wave">&#128075;</span></p>
+            <p class="second">I Am <span id="nam"> Mwirigi Desmond</span></p>
+            <p class="third">Full-Stack Developer</p>
             <p class="fourth">I am a software engineer with a passion for technology and innovation. I am constantly seeking opportunities to advance my skills and build a solid foundation for my career in the technology sector.</p>
             <div>
                 <div>
@@ -60,41 +60,48 @@
             <img id="image" src="profilebg.png" alt="not found">
         </div>
     </div>
+    
+
+    
     <div id="about" class="about">
-        <p id="abot">About Me</p><br>
-        <p style="text-align: center; color: white; font-family: montserrat;">
-            I am currently in my final year as a BSc. Software Engineering 
-            student at Kisii University. I am actively focusing on my coursework 
-            and utilizing available resources to further develop my expertise in 
-            various areas of the technology field. My proficiency spans across 
-            cloud computing, software development and design, and cyber security. 
-            I am constantly seeking opportunities to advance my skills and build 
-            a solid foundation for my career in the technology sector.
-        </p>
+        <div class="InnerAbout">
+            <p id="abot">About Me</p><br>
+            <p style="text-align: center; color: white; font-family: montserrat;">
+                I am currently in my final year as a BSc. Software Engineering 
+                student at Kisii University. I am actively focusing on my coursework 
+                and utilizing available resources to further develop my expertise in 
+                various areas of the technology field. My proficiency spans across 
+                cloud computing, software development and design, and cyber security. 
+                I am constantly seeking opportunities to advance my skills and build 
+                a solid foundation for my career in the technology sector.
+
+            </p>
+        
  
-        <div id="skills" class="about">
-            <P style="text-align: center;  font-size: 25px; color: white; font-weight: bolder; margin-top: 16px;">Skills</label> <P>
-            <div style="margin-left: 5%; margin-right: 10px">
-                <button id="butt">Full Stack Dev</button>
-                <button id="butt">Graphic Designing</button>
-                <button id="butt">Android Dev</button>
-                <button id="butt">Web Designing</button>
-                <button id="butt">Phython</button>
-                <button id="butt">JavaScript</button>
-                <button id="butt">React Native</button>
-                <button id="butt">Mongo DB</button>
-                <button id="buto">Machine Learning 
-                    <span>
-                        <i style="color: white;" class="fa-solid fa-lock"></i>
-                    </span>
-                </button>
-                <button id="buto">Cyber Security 
-                    <span>
-                        <i style="color: white;" class="fa-solid fa-lock"></i>
-                    </span>
-                </button>
-                <button id="but"><span>Learning...</span></button>
-                <button id="but"><span>Learning...</span></button>
+            <div id="skills" class="about">
+                <P style="text-align: center;  font-size: 25px; color: white; font-weight: bolder; margin-top: 16px;">Skills</label> <P>
+                <div style="margin-left: 5%; margin-right: 10px">
+                    <button id="butt">Full Stack Dev</button>
+                    <button id="butt">Graphic Designing</button>
+                    <button id="butt">Android Dev</button>
+                    <button id="butt">Web Designing</button>
+                    <button id="butt">Phython</button>
+                    <button id="butt">JavaScript</button>
+                    <button id="butt">React Native</button>
+                    <button id="butt">Mongo DB</button>
+                    <button id="buto">Machine Learning 
+                        <span>
+                            <i style="color: white;" class="fa-solid fa-lock"></i>
+                        </span>
+                    </button>
+                    <button id="buto">Cyber Security 
+                        <span>
+                            <i style="color: white;" class="fa-solid fa-lock"></i>
+                        </span>
+                    </button>
+                    <button id="but"><span>Learning...</span></button>
+                    <button id="but"><span>Learning...</span></button>
+                </div>
             </div>
         </div>
      </div>
@@ -103,7 +110,7 @@
 
      <div id="projects" class="proj-container">
         <div style="width: 90%; margin-left: 5%;">
-            <P style="text-align: center;  font-size: 25px; color: white; font-weight: bolder;">Projects</label> <P>
+            <P id="proje">Projects</label> <P>
 
             <div class="projects">
                 <div class="project">
@@ -114,39 +121,48 @@
                         <p id="skill">Graphic Design</p>
                     </div>
                 </div>
+
                 <div class="pic-container">
                     <div class="proj">
-                        <div class="pics">
-                            <img src="icta_books.png" alt="Your Image">
+                        <div class="pics" data-details="Details about ICTA Books project">
+                            <img src="icta_books.png" alt="ICTA Books">
                         </div>
-                        <div class="pics">
-                            <img src="kitchen.png" alt="Your Image">
+                        <div class="pics" data-details="Details about Kitchen project">
+                            <img src="kitchen.png" alt="Kitchen">
                         </div>
-                        <div class="pics">
-                            <img src="jirani.jpeg" alt="Your Image">
+                        <div class="pics" data-details="Details about Jirani project">
+                            <img src="jirani.jpeg" alt="Jirani">
                         </div>
                     </div>
                     <div class="projo">
-                        <div class="pics">
-                            <img src="stay.jpeg" alt="Your Image">
+                        <div class="pics" data-details="Details about Stay project">
+                            <img src="stay.jpeg" alt="Stay">
                         </div>
-                        <div class="pics">
-                            <img src="jobmt.jpeg" alt="Your Image">
-
+                        <div class="pics" data-details="Details about JobMT project">
+                            <img src="jobmt.jpeg" alt="JobMT">
                         </div>
-                        <div class="pics">
-                            <img src="skill.jpeg" alt="Your Image">
-
+                        <div class="pics" data-details="Details about Skill project">
+                            <img src="skill.jpeg" alt="Skill">
                         </div>
                     </div>
                 </div>
+                
+                <div class="overlay"></div>
+                <div class="popup">
+                    <button class="popup-close">&times;</button>
+                    <img src="" alt="Project Image">
+                    <div class="details"></div>
+                </div>
+                
+                
+
             </div>    
         </div>
     </div>
 
     <div id="contact" class="about">        
         <div style="width: 90%; margin-left: 5%; ">
-            <P style="text-align: center;  font-size: 25px; color: #f5e8d1; font-weight: bolder;">Contact me</label> <P>
+            <P id="contactMe">Contact me</label> <P>
             <div class="contact">
                 <div class="contact_info">
                     <div style="margin: 7px;">
@@ -220,6 +236,40 @@
         }
     }
 
+
+
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const pics = document.querySelectorAll('.pics');
+        const overlay = document.querySelector('.overlay');
+        const popup = document.querySelector('.popup');
+        const popupImage = document.querySelector('.popup img');
+        const popupDetails = document.querySelector('.popup .details');
+        const popupClose = document.querySelector('.popup-close');
+
+        pics.forEach(pic => {
+            pic.addEventListener('click', () => {
+                const imgSrc = pic.querySelector('img').src;
+                const details = pic.getAttribute('data-details');
+                
+                popupImage.src = imgSrc;
+                popupDetails.innerHTML = details;
+                
+                overlay.style.display = 'block';
+                popup.style.display = 'block';
+            });
+        });
+
+        overlay.addEventListener('click', () => {
+            overlay.style.display = 'none';
+            popup.style.display = 'none';
+        });
+
+        popupClose.addEventListener('click', () => {
+            overlay.style.display = 'none';
+            popup.style.display = 'none';
+        });
+    });
     </script>
 </body>
 </html>
